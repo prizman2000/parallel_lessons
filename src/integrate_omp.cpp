@@ -80,13 +80,12 @@ double integrate_false_sharing(double a, double b, function f)
 
 double integrate_reduction(double a, double b, function f)
 {
-    double result = 0.0, dx = (b-a)/STEPS;
+    double result = 0, dx = (b - a) / STEPS;
 
-#pragma omp parallel for reduction (+ : result)
-
-    for (int i = 0; i < STEPS; i++)
-    {
-        result = f(a+dx*i);
+#pragma omp parallel for reduction(+: result)
+    for (unsigned int i = 0; i < STEPS; ++i) {
+        result += f(dx * i + a);
     }
+
     return result * dx;
 }

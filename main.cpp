@@ -61,7 +61,7 @@ int main() {
     printf("Integrate_false_sharing_omp\n");
     ShowExperimentResult(integrate_false_sharing);
 
-    printf("Integrate_reduction\n");
+    printf("Integrate_reduction_omp\n");
     ShowExperimentResult(integrate_reduction);
 
     return 0;
