@@ -9,7 +9,7 @@ double integrate_cpp_mtx(double a, double b, function f)
     vector<thread> threads;
     double result = 0, dx = (b-a)/STEPS;
 
-    for(unsigned t = 0; t < T; ++t)
+    for(unsigned t = 0; t < T; t++)
     {
         threads.emplace_back([=, &result, &mtx]()
         {
@@ -21,8 +21,13 @@ double integrate_cpp_mtx(double a, double b, function f)
                 result += R;
             }
         });
-        return result*dx;
     }
+
+    for (auto &thr: threads) {
+        thr.join();
+    }
+
+    return result * dx;
 }
 
 double integrate_partial_sum(double a, double b, function f)
