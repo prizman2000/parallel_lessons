@@ -4,7 +4,7 @@ double integrate_cpp_mtx(double a, double b, function f)
 {
     using namespace std;
 
-    unsigned int T = thread::hardware_concurrency();
+    unsigned int T = get_num_threads();
     mutex mtx;
     vector<thread> threads;
     double result = 0, dx = (b-a)/STEPS;
@@ -33,7 +33,7 @@ double integrate_cpp_mtx(double a, double b, function f)
 double integrate_partial_sum(double a, double b, function f)
 {
     double result = 0, dx = (b-a)/STEPS;
-    unsigned T = std::thread::hardware_concurrency();
+    unsigned T = get_num_threads();
     auto vec = std::vector<partial_sum>(T, partial_sum{0.0});
 
     std::vector<std::thread> thread_vec;

@@ -11,8 +11,8 @@ double integrate_align_omp(double a, double b, function f)
         unsigned t = (unsigned) omp_get_thread_num();
 #pragma omp single
         {
-            T = (unsigned) omp_get_num_threads();
-            accum = (partial_sum*) calloc(T, sizeof(double));
+            T = (unsigned) get_num_threads();
+            accum = (partial_sum*) calloc(CACHE_LINE, T * sizeof(partial_sum));
         }
 
         for (unsigned i = t; i < STEPS; i += T)
@@ -25,6 +25,8 @@ double integrate_align_omp(double a, double b, function f)
     {
         result += accum[i].value;
     }
+
+    free(accum);
 
     return result * dx;
 }

@@ -26,7 +26,7 @@ void ShowExperimentResult(integrate_function I)
     for(unsigned T = 1; T <=omp_get_num_procs(); T++)
     {
         experiment_result Experiment;
-        omp_set_num_threads(T);
+        set_num_threads(T);
         Experiment = RunExperiment(I);
         if (T == 1) {
             T1 = Experiment.TimeMS;

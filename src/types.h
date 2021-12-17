@@ -16,6 +16,7 @@ constexpr std::size_t hardware_destructive_interface_size = 64u;
 #endif
 
 #define STEPS 100000000
+#define CACHE_LINE 64u
 
 typedef double (*function)(double);
 
