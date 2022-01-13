@@ -22,6 +22,8 @@ typedef double (*function)(double);
 
 typedef double (*integrate_function) (double, double, function);
 
+typedef double (*randomize_function) (unsigned, unsigned*, size_t, unsigned, unsigned);
+
 std::size_t ceil_div(std::size_t x, std::size_t y);
 
 struct partial_sum
@@ -167,5 +169,9 @@ ElementType reduce_range(ElementType a, ElementType b, std::size_t n, UnaryFn ge
 
     return reduction_partial_results[0].value;
 }
+
+double RandomizeArraySingle(unsigned seed, unsigned* V, size_t n, unsigned min, unsigned max);
+
+double RandomizeArrayShared(unsigned seed, unsigned* V, size_t n, unsigned min, unsigned max);
 
 #endif //PARALLEL_FINAL_TYPES_H

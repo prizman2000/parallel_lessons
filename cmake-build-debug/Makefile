@@ -251,6 +251,33 @@ src/integrate_omp.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/integrate_omp.cpp.s
 .PHONY : src/integrate_omp.cpp.s
 
+src/randomizer.o: src/randomizer.cpp.o
+
+.PHONY : src/randomizer.o
+
+# target to build an object file
+src/randomizer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/randomizer.cpp.o
+.PHONY : src/randomizer.cpp.o
+
+src/randomizer.i: src/randomizer.cpp.i
+
+.PHONY : src/randomizer.i
+
+# target to preprocess a source file
+src/randomizer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/randomizer.cpp.i
+.PHONY : src/randomizer.cpp.i
+
+src/randomizer.s: src/randomizer.cpp.s
+
+.PHONY : src/randomizer.s
+
+# target to generate assembly for a file
+src/randomizer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/randomizer.cpp.s
+.PHONY : src/randomizer.cpp.s
+
 src/reduction.o: src/reduction.cpp.o
 
 .PHONY : src/reduction.o
@@ -326,6 +353,9 @@ help:
 	@echo "... src/integrate_omp.o"
 	@echo "... src/integrate_omp.i"
 	@echo "... src/integrate_omp.s"
+	@echo "... src/randomizer.o"
+	@echo "... src/randomizer.i"
+	@echo "... src/randomizer.s"
 	@echo "... src/reduction.o"
 	@echo "... src/reduction.i"
 	@echo "... src/reduction.s"

@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/apple/CLionProjects/parallel_final/src/functions.cpp" "/Users/apple/CLionProjects/parallel_final/cmake-build-debug/CMakeFiles/parallel_final.dir/src/functions.cpp.o"
   "/Users/apple/CLionProjects/parallel_final/src/integrate_cpp.cpp" "/Users/apple/CLionProjects/parallel_final/cmake-build-debug/CMakeFiles/parallel_final.dir/src/integrate_cpp.cpp.o"
   "/Users/apple/CLionProjects/parallel_final/src/integrate_omp.cpp" "/Users/apple/CLionProjects/parallel_final/cmake-build-debug/CMakeFiles/parallel_final.dir/src/integrate_omp.cpp.o"
+  "/Users/apple/CLionProjects/parallel_final/src/randomizer.cpp" "/Users/apple/CLionProjects/parallel_final/cmake-build-debug/CMakeFiles/parallel_final.dir/src/randomizer.cpp.o"
   "/Users/apple/CLionProjects/parallel_final/src/reduction.cpp" "/Users/apple/CLionProjects/parallel_final/cmake-build-debug/CMakeFiles/parallel_final.dir/src/reduction.cpp.o"
   "/Users/apple/CLionProjects/parallel_final/src/threads_num.cpp" "/Users/apple/CLionProjects/parallel_final/cmake-build-debug/CMakeFiles/parallel_final.dir/src/threads_num.cpp.o"
   )

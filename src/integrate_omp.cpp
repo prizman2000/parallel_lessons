@@ -31,7 +31,7 @@ double integrate_align_omp(double a, double b, function f)
     return result * dx;
 }
 
-double integrate_crit(double a, double b, function f)
+double integrate_crit(double a, double b, function f) //(примитив синхронизации)критическая секция
 {
     double result = 0, dx = (b - a)/STEPS;
 

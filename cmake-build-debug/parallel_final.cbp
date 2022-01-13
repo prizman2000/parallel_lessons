@@ -92,6 +92,9 @@
 		<Unit filename="/Users/apple/CLionProjects/parallel_final/src/integrate_omp.cpp">
 			<Option target="parallel_final"/>
 		</Unit>
+		<Unit filename="/Users/apple/CLionProjects/parallel_final/src/randomizer.cpp">
+			<Option target="parallel_final"/>
+		</Unit>
 		<Unit filename="/Users/apple/CLionProjects/parallel_final/src/reduction.cpp">
 			<Option target="parallel_final"/>
 		</Unit>
