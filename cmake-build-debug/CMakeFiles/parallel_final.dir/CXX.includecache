@@ -6,8 +6,8 @@
 
 #IncludeRegexTransform: 
 
-/Users/apple/CLionProjects/parallel_final/main.cpp
-src/types.h
+/Users/apple/CLionProjects/parallel_final/src/integrate_cpp.cpp
+types.h
 /Users/apple/CLionProjects/parallel_final/src/types.h
 
 /Users/apple/CLionProjects/parallel_final/src/types.h

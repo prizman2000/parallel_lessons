@@ -1,6 +1,6 @@
 #include "types.h"
 
-double integrate_cpp_mtx(double a, double b, function f) ()
+double integrate_cpp_mtx(double a, double b, function f)
 {
     using namespace std;
 
