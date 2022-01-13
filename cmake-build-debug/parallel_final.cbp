@@ -83,6 +83,9 @@
 		<Unit filename="/Users/apple/CLionProjects/parallel_final/main.cpp">
 			<Option target="parallel_final"/>
 		</Unit>
+		<Unit filename="/Users/apple/CLionProjects/parallel_final/src/fibonacci.cpp">
+			<Option target="parallel_final"/>
+		</Unit>
 		<Unit filename="/Users/apple/CLionProjects/parallel_final/src/functions.cpp">
 			<Option target="parallel_final"/>
 		</Unit>

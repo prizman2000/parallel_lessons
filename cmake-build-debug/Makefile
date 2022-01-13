@@ -170,6 +170,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/fibonacci.o: src/fibonacci.cpp.o
+
+.PHONY : src/fibonacci.o
+
+# target to build an object file
+src/fibonacci.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/fibonacci.cpp.o
+.PHONY : src/fibonacci.cpp.o
+
+src/fibonacci.i: src/fibonacci.cpp.i
+
+.PHONY : src/fibonacci.i
+
+# target to preprocess a source file
+src/fibonacci.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/fibonacci.cpp.i
+.PHONY : src/fibonacci.cpp.i
+
+src/fibonacci.s: src/fibonacci.cpp.s
+
+.PHONY : src/fibonacci.s
+
+# target to generate assembly for a file
+src/fibonacci.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/parallel_final.dir/build.make CMakeFiles/parallel_final.dir/src/fibonacci.cpp.s
+.PHONY : src/fibonacci.cpp.s
+
 src/functions.o: src/functions.cpp.o
 
 .PHONY : src/functions.o
@@ -344,6 +371,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/fibonacci.o"
+	@echo "... src/fibonacci.i"
+	@echo "... src/fibonacci.s"
 	@echo "... src/functions.o"
 	@echo "... src/functions.i"
 	@echo "... src/functions.s"

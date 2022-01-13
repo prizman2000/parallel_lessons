@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/parallel_final.dir/main.cpp.o"
+  "CMakeFiles/parallel_final.dir/src/fibonacci.cpp.o"
   "CMakeFiles/parallel_final.dir/src/functions.cpp.o"
   "CMakeFiles/parallel_final.dir/src/integrate_cpp.cpp.o"
   "CMakeFiles/parallel_final.dir/src/integrate_omp.cpp.o"

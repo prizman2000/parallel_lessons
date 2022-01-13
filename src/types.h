@@ -174,4 +174,6 @@ double RandomizeArraySingle(unsigned seed, unsigned* V, size_t n, unsigned min, 
 
 double RandomizeArrayShared(unsigned seed, unsigned* V, size_t n, unsigned min, unsigned max);
 
+unsigned fibonacci (unsigned n);
+
 #endif //PARALLEL_FINAL_TYPES_H

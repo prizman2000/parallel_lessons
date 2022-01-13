@@ -16,10 +16,10 @@ double integrate_cpp_mtx(double a, double b, function f)
             double R = 0;
             for(unsigned i = t; i < STEPS; i+=T)
                 R += f(dx*i + a);
-            {
-                scoped_lock lck(mtx);
-                result += R;
-            }
+//            {
+//                scoped_lock lck(mtx);
+//                result += R;
+//            }
         });
     }
 
